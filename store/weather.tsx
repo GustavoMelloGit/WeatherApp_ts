@@ -1,7 +1,48 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { IServerResponse } from "../utils/interfaces";
 
-const initialState: IServerResponse[] = [];
+const initialState: IServerResponse[] = [
+  {
+    name: "Divino",
+    main: {
+      feels_like: 18,
+      humidity: 60,
+      pressure: 1500,
+      temp: 18,
+    },
+    wind: {
+      speed: 1,
+    },
+    weather: [
+      {
+        id: 1,
+        main: "Clear",
+        description: "Clear sky",
+        icon: "01d",
+      },
+    ],
+  },
+  {
+    name: "Carangola",
+    main: {
+      feels_like: 18,
+      humidity: 60,
+      pressure: 1500,
+      temp: 18,
+    },
+    wind: {
+      speed: 1,
+    },
+    weather: [
+      {
+        id: 1,
+        main: "Clear",
+        description: "Clear sky",
+        icon: "01d",
+      },
+    ],
+  },
+];
 
 const weatherSlice = createSlice({
   name: "weather",

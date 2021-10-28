@@ -4,11 +4,12 @@ import { StyleSheet } from "react-native";
 import Home from "./screens/Home";
 import { Provider } from "react-redux";
 import store from "./store";
+import Search from "./screens/Search";
 
 export default function App() {
   return (
     <Provider store={store}>
-      <Home />
+      <Search />
     </Provider>
   );
 }
