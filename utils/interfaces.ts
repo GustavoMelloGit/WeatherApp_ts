@@ -6,6 +6,9 @@ export interface IServerResponse {
     pressure: number;
     temp: number;
   };
+  sys: {
+    country: string;
+  };
   wind: {
     speed: number;
   };

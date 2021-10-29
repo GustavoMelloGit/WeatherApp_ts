@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { colors } from "../utils";
+import { colors } from "../../../utils";
 import { FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons";
-import Divider from "./Divider";
-import { IServerResponse } from "../utils/interfaces";
+import Divider from "../ui/Divider";
+import { IServerResponse } from "../../../utils/interfaces";
 
 const { PRIMARY_COLOR, SECONDARY_COLOR, BORDER_COLOR } = colors;
 

@@ -1,7 +1,6 @@
 import React, { Dispatch, SetStateAction } from "react";
-import { View, Text, StyleSheet, Platform } from "react-native";
+import { View, StyleSheet } from "react-native";
 import { Picker } from "@react-native-community/picker";
-import { ItemValue } from "@react-native-community/picker/typings/Picker";
 
 interface IUnitsPicker {
   unitsSystem: string;

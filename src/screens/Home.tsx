@@ -8,10 +8,10 @@ import {
   WeatherInfo,
   WeatherDetails,
 } from "../components";
-import { colors } from "../utils";
-import { WEATHER_API_KEY, BASE_WEATHER_URL } from "@env";
+import { colors } from "../../utils";
+import { WEATHER_API_KEY, BASE_URL } from "@env";
 import Constants from "expo-constants";
-import { IServerResponse } from "../utils/interfaces";
+import { IServerResponse } from "../../utils/interfaces";
 import { useDispatch } from "react-redux";
 import { saveWeather } from "../store/weather";
 
@@ -35,7 +35,7 @@ export default function Home() {
       const location = await Location.getCurrentPositionAsync();
       const { latitude, longitude } = location.coords;
 
-      const weatherUrl = `${BASE_WEATHER_URL}lat=${latitude}&lon=${longitude}&units=${unitsSystem}&appid=${WEATHER_API_KEY}`;
+      const weatherUrl = `${BASE_URL}lat=${latitude}&lon=${longitude}&units=${unitsSystem}&appid=${WEATHER_API_KEY}`;
       const response = await fetch(weatherUrl);
 
       const result = await response.json();

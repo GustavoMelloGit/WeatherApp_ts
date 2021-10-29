@@ -1,8 +1,8 @@
 import React from "react";
 import { Text, View, StyleSheet, Image } from "react-native";
 import { useSelector } from "react-redux";
-import { RootState } from "../store";
-import { colors } from "../utils";
+import { RootState } from "../../store";
+import { colors } from "../../../utils";
 
 const { PRIMARY_COLOR, SECONDARY_COLOR } = colors;
 
